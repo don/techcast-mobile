@@ -1,0 +1,24 @@
+Chariot Tech Cast Mobile Player
+================================
+
+Experimental iPhone web application using jQuery Mobile and HTML5 audio
+
+Requires Ruby and Sinatra
+
+Run the server
+--------------
+	$ ruby -rubygems techcast.rb
+
+Run the application
+--------------------
+open http://your_ip_address:4567/ on your iphone
+there might be a copy http://techcast.heroku.com
+
+Get the latest RSS
+--------------------
+
+RSS is included with the source so it's faster.  Future versions should download and cache the RSS.
+
+Refresh the local copy of the feed with curl
+
+	curl -o public/feed.rss http://feeds.feedburner.com/ChariotTechCast?format=xml

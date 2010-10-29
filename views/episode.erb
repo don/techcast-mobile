@@ -1,0 +1,16 @@
+<div data-role="page">
+	<div data-role="header">
+		<h1>Chariot Tech Cast</h1>
+	</div>
+	<div data-role="content">
+		<h2><%= @title %></h2>
+		
+		<%# Why does jQuery mobile need a link instead of a button for onclick %>
+		<a href="#" id="button" data-role="button" onclick="togglePlayer();return false;">Play</a>		
+
+		<%= @description %>
+		<audio id="player">
+			<source src="<%= @url %>" />
+		</audio>		
+	</div>
+</div>

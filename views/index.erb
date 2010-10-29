@@ -1,0 +1,16 @@
+<div data-role="page">
+	<div data-role="header">
+		<h1>Chariot Tech Cast</h1>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview" data-filter="true">
+		<% @items.each do |item| %>
+			<li>
+				<a href="/episode/<%= item[:libsyn_id] %>">
+					<%= item[:title] %>
+				</a>
+			</li>
+		<% end %>
+		</ul>
+	</div>
+</div>
